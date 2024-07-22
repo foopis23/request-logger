@@ -14,3 +14,7 @@ app.all('*', (req, res) => {
 
 	res.status(200).send('Success');
 });
+
+app.listen(process.env.PORT || 3000, () => {
+	logger.info('Server started');
+});
